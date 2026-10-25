@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Licznik dni — ile do wydarzenia</title>
+<meta name="description" content="Ile dni do wakacji, urodzin, ślubu? Dodaj wydarzenia i patrz jak maleje licznik. Zapisane lokalnie.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <!-- TODO: link do portfolio, gdy powstanie -->
+  <h1>Licznik dni</h1>
+  <p>Ile jeszcze? Dodaj datę i przestań liczyć w głowie.</p>
+  <section class="card">
+    <div id="list"></div>
+    <p id="empty" class="hint">Brak wydarzeń — dodaj pierwsze poniżej.</p>
+    <p>
+      <input id="name" placeholder="Nazwa, np. Wakacje">
+      <input id="date" type="date">
+      <button id="add" type="button">Dodaj</button>
+    </p>
+  </section>
+  <div id="ads-slot" hidden></div>
+  <footer><a href="privacy.html">Prywatność</a> · <a href="kontakt.html">Kontakt</a></footer>
+</main>
+<script src="app.js"></script>
+<script src="ads.js"></script>
+</body>
+</html>
